@@ -1,24 +1,6 @@
-# README
+# IPO-Watchlist
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Newsletter that scrapes the ASX web site and provides IPO information. All automated including creation of newsletter and distribution.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Information about Initial Public Offerings (IPOs) of companies who are about to list on the Australian stock exchange (ASX) is available in the public domain. However, you have to remember to look regularly and know where to look.
+The idea was to automate this process of information sourcing and to then distribute it via a regular newsletter with everything being automated.
