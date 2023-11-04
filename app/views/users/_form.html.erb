@@ -1,0 +1,30 @@
+<%= form_with(model: user) do |form| %>
+
+  <!-- This part is the bootstrap card -->
+
+  <div class="card mb-3 bg-transparent text-bg-dark" style="width: 20rem;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="man.jpg" class="card-img-top">    <!-- Place the image at the top of the card -->
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Stay current with all IPOs that are about to occur on the Austrailan Stock Exchange.</h5>
+          <p class="card-text">Regular emails covering all the information you need to research current ASX IPOs.</p>    
+        </div>
+      </div>
+    </div>
+  
+    <%= form.email_field :email, 
+                        placeholder: "Your email address here ...", 
+                        required: true %>  
+                                                
+    <%= form.button "Yes please", type: "submit", :class=> "btn btn-primary" %>
+    <%= form.button "Unsubscribe me", type: "submit", :class=> "btn btn-danger" %>
+    
+    
+
+    </div>
+  
+<% end %>
+

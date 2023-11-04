@@ -1,0 +1,2 @@
+class Asxlisting < ApplicationRecord
+end

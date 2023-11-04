@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Asxlistings</h1>
+
+<div id="asxlistings">
+  <% @asxlistings.each do |asxlisting| %>
+    <%= render asxlisting %>
+    <p>
+      <%= link_to "Show this asxlisting", asxlisting %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New asxlisting", new_asxlisting_path %>

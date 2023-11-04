@@ -1,0 +1,67 @@
+<%= form_with(model: listing) do |form| %>
+  <% if listing.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+        <% listing.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :company, style: "display: block" %>
+    <%= form.text_field :company %>
+  </div>
+
+  <div>
+    <%= form.label :listingDate, style: "display: block" %>
+    <%= form.text_field :listingDate %>
+  </div>
+
+  <div>
+    <%= form.label :contact, style: "display: block" %>
+    <%= form.text_field :contact %>
+  </div>
+
+  <div>
+    <%= form.label :activities, style: "display: block" %>
+    <%= form.text_field :activities %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :shareType, style: "display: block" %>
+    <%= form.text_field :shareType %>
+  </div>
+
+  <div>
+    <%= form.label :code, style: "display: block" %>
+    <%= form.text_field :code %>
+  </div>
+
+  <div>
+    <%= form.label :capital, style: "display: block" %>
+    <%= form.text_field :capital %>
+  </div>
+
+  <div>
+    <%= form.label :close, style: "display: block" %>
+    <%= form.text_field :close %>
+  </div>
+
+  <div>
+    <%= form.label :underwriter, style: "display: block" %>
+    <%= form.text_field :underwriter %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

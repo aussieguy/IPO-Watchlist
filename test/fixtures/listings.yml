@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  listingDate: MyString
+  contact: MyString
+  activities: MyString
+  price: MyString
+  shareType: MyString
+  code: MyString
+  capital: MyString
+  close: MyString
+  underwriter: MyString
+
+two:
+  company: MyString
+  listingDate: MyString
+  contact: MyString
+  activities: MyString
+  price: MyString
+  shareType: MyString
+  code: MyString
+  capital: MyString
+  close: MyString
+  underwriter: MyString

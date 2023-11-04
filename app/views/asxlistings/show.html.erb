@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @asxlisting %>
+
+<div>
+  <%= link_to "Edit this asxlisting", edit_asxlisting_path(@asxlisting) %> |
+  <%= link_to "Back to asxlistings", asxlistings_path %>
+
+  <%= button_to "Destroy this asxlisting", @asxlisting, method: :delete %>
+</div>

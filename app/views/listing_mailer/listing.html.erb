@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <style>
+    /* Style the body */
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>IPO Watchlist </h1>
+    </header>
+
+    <% @listings = Listing.all %>
+      <% @listings.each do | listing | %>
+
+      <%= render listing %>
+      <a href="https://www.bing.com/?/ai">Tell me more about this company</a>
+      <p><a href="https://www.buymeacoffee.com/gemvalidaty">Help keep this newsletter alive</a></p>
+      <center><p>*********************************************</p></center>
+    <% end %>        
+  </body>
+</html>
+
+<!-- TO DO: Unsubscribe -->
+<!-- We can give them a direct link back to the home page once we know the url.  -->
+<!-- To do: passwords.  These are hardcoded in the source code.  Need to create as an ENV -->
+
+<!-- Next: Heroku deployment and github -->
